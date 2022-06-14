@@ -1,0 +1,466 @@
+:root {
+  --blue-one: #A2C0C7;
+  --blue-two: #449faf;
+  --blue-three: #BCE3EA;
+  --blue-four: #2c6574;
+  --castle-one : #E2D1C7; 
+  --castle-two : #D4C4B5; 
+  --castle-three : #c7af9c; 
+  --castle-four : #AE9A8F; 
+  --castle-five : #a19f9e; 
+  --castle-bg: rgb(189, 171, 137);
+  --tower-one: #c7a58e;
+  --tower-two: #a59284;
+  --tower-two: #a59284;
+  --flag-pole: #462c22;
+  --flag-orange: rgb(247, 115, 67);
+  --flag-white: rgb(255, 255, 255);
+  --flag-green: rgb(53, 105, 40);
+  --ashoka-center1: rgb(19, 8, 59);
+  --ashoka-center2: rgb(190, 175, 243);
+  --ashoka-center3: rgb(228, 220, 245);
+}
+
+* {
+  /* border: 1px solid black; */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.sky {
+  background: radial-gradient(
+    closest-corner circle at 50% 40%,
+    #ffff00,
+    #ffff35 20%,
+    #ffffa2 21%,
+    #d1e6f3 100%
+  );
+}
+
+.castle-end-towers {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.end-tower {
+  width: 10%;
+  height: 85%;
+}
+
+.tower1 {
+ border-bottom: 7vh solid var(--blue-two);
+ border-left: 4.95vw solid transparent;
+ border-right: 4.95vw solid transparent;
+} 
+
+.tower2 {
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    var(--castle-one),
+    var(--castle-two) 20%,
+    var(--castle-three) 40%,
+    var(--castle-four) 60%,
+    var(--castle-five) 80%
+  );
+
+  /* background: repeating-linear-gradient(
+    var(--tower-one),
+    var(--tower-one) 0.5%,
+    transparent 0.5%,
+    transparent 1.5%
+  ),
+  repeating-linear-gradient(
+    90deg,
+    var(--tower-one),
+    var(--tower-one) 4%,
+    var(--tower-two) 4%,
+    var(--tower-two) 11%
+  ); */
+  /* background-image: url(../practice/sai-balaji-varma-gadhiraju-pe9rkVSNYCA-unsplash.jpg);
+  background-size: cover; */
+}
+
+.castle-background-towers {
+  width: 60%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.background-tower {
+  height: 95%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flag-pole {
+  height: 10%;
+  width: 40%;
+}
+
+ .flag {
+  width: 100%;
+  height: 40%;
+ }
+
+ .orange {
+  width: 100%;
+  height: 33.33%;
+  background-color: var(--flag-orange);
+ }
+
+ .white {
+  width: 100%;
+  height: 33.33%;
+  background-color: var(--flag-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .ashoka-chakra {
+  width: 23%;
+  height: 100%;
+  border-radius: 50%;
+  background: radial-gradient(
+    var(--ashoka-center1),
+    var(--ashoka-center2) 40%,
+    var(--ashoka-center3) 60%,
+    var(--ashoka-center1) 80%
+  );
+ }
+
+ .green {
+  width: 100%;
+  height: 33.33%;
+  background-color: var(--flag-green);
+ }
+
+ .pole {
+  width: 100%;
+  height: 90%;
+  border-right: 3px solid var(--flag-pole);
+ }
+
+.towerb1 {
+ width: 100%;
+ height: 5%;
+}
+
+.towerb2 {
+  width: 90%;
+  height: 95%;
+  background: linear-gradient(
+    90deg,
+    var(--castle-one),
+    var(--castle-two) 20%,
+    var(--castle-three) 40%,
+    var(--castle-four) 60%,
+    var(--castle-five) 80%
+  );
+
+  /* background: repeating-linear-gradient(
+    var(--castle-three),
+    var(--castle-three) 0.5%,
+    transparent 0.5%,
+    transparent 1.5%
+  ),
+  repeating-linear-gradient(
+    90deg,
+    var(--castle-three),
+    var(--castle-three) 4%,
+    var(--castle-five) 4%,
+    var(--castle-five) 11%
+  ); */
+  /* background-image: url(../practice/sai-balaji-varma-gadhiraju-pe9rkVSNYCA-unsplash.jpg);
+  background-size: cover; */
+}
+
+.tower-top-ridges, .tower-top {
+ width: 100%;
+ height: 50%;
+}
+
+.tower-top-ridges {
+  display: flex;
+}
+
+.ridge, .no-ridge {
+  width: 10%;
+  height: 100%;
+}
+
+.ridge {
+  background-color: var(--blue-two);
+}
+
+.no-ridge {
+  background-color: transparent;
+}
+
+.tower-top {
+  background-color: var(--blue-two);
+}
+
+.castle {
+  width: 82%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 9%;
+  right: 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.castle-top {
+  width: 100%;
+  height: 13%;
+}
+
+.castle-top1, .castle-top2 {
+  width: 100%;
+  height: 50%;
+}
+
+.castle-top1 {
+ display: flex;
+ justify-content: center;
+}
+
+.ridge-castle, .no-ridge-castle {
+  width: 5.01%;
+  height: 100%;
+}
+
+.ridge-castle{
+  background-color: var(--blue-two);
+}
+
+.no-ridge-castle {
+  background-color: transparent;
+}
+
+.castle-top2 {
+  background-color: var(--blue-two);
+}
+
+.castle-body {
+  width: 97.5%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: var(--castle-two);
+  background: repeating-linear-gradient(
+    90deg,
+    var(--castle-one),
+    transparent 2%,
+    var(--castle-three) 3%,
+    transparent 4%,
+    var(--castle-three) 5%
+  ),
+  repeating-linear-gradient(
+    transparent ,
+    var(--castle-two) 2%,
+    transparent  3%,
+    var(--castle-three) 4%,
+    transparent  5%
+  );
+  background-color: var(--castle-bg);
+}
+
+/*   background: repeating-linear-gradient(
+     90deg,
+     var(--castle-one),
+     transparent 1%,
+     var(--castle-three) 2%,
+     transparent 3%,
+     var(--castle-four) 4%,
+     transparent 5%
+  ),
+  repeating-linear-gradient(
+    var(--tower-one),
+    var(--castle-one) 2%,
+    var(--tower-two) 5%,
+    var(--castle-three) 7%
+  ) */
+
+.door {
+  width: 25%;
+  height: 55%;
+  background-color: #101525;
+  border-radius: 35% 35% 0 0;
+  border-left: 1vh solid var(--flag-pole);
+  border-right: 1vh solid var(--flag-pole);
+  border-top: 1vh solid var(--flag-pole);
+}
+
+.curtains {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.curtain1, .curtain2 {
+  width: 49.8%;
+  height: 100%;
+  background-color: var(--blue-two);
+  border-bottom: 1vw solid var(--blue-four);
+}
+
+.curtain1 {
+  border-radius: 62% 0 95% 0;
+}
+
+.curtain2 {
+  border-radius: 0 62% 0 95%;
+}
+
+.castle-bottom {
+  width: 110%;
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stairs {
+  height: 10%;
+  background: linear-gradient(
+    var(--castle-one),
+    var(--castle-four)
+  );
+}
+
+.one {
+  width: 90.5%;
+}
+.two {
+  width: 92%;
+}
+.three {
+  width: 93%;
+}
+.four {
+  width: 94%;
+}
+.five {
+  width: 95%;
+}
+.six {
+  width: 96%;
+}
+.seven {
+  width: 97%;
+}
+.eight {
+  width: 98%;
+}
+.nine {
+  width: 99%;
+}
+.ten {
+  width: 100%;
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+  .sky {
+    background: radial-gradient(
+        closest-corner circle at 50% 40%,
+        #ccc,
+        #ccc 20%,
+        #445 21%,
+        #223 100%
+      );
+}
+
+:root {
+  --blue-one: #7e979c;
+  --blue-two: #28616b;
+  --blue-three: #789094;
+  --blue-four: #1d424d;
+  --castle-one : #ada099; 
+  --castle-two : #998e83; 
+  --castle-three : #948274; 
+  --castle-four : #83736a; 
+  --castle-five : #777675; 
+  --castle-bg: rgb(131, 118, 94);
+  --tower-one: #8f7665;
+  --tower-two: #7c6d63;
+  --tower-three: #695d55;
+  --flag-pole: #271913;
+  --flag-orange: rgb(138, 54, 23);
+  --flag-white: rgb(223, 219, 219);
+  --flag-green: rgb(32, 63, 24);
+  --ashoka-center1: rgb(12, 5, 36);
+  --ashoka-center2: rgb(138, 123, 190);
+  --ashoka-center3: rgb(171, 159, 197);
+}
+}
+
+@media (min-width: 1100px) {
+  .sky {
+      background: radial-gradient(
+          closest-corner circle at 50% 40%,
+          #ccc,
+          #ccc 20%,
+          #445 21%,
+          #223 100%
+        );
+  }
+
+  :root {
+    --blue-one: #7e979c;
+    --blue-two: #28616b;
+    --blue-three: #789094;
+    --blue-four: #1d424d;
+    --castle-one : #ada099; 
+    --castle-two : #998e83; 
+    --castle-three : #948274; 
+    --castle-four : #83736a; 
+    --castle-five : #777675; 
+    --castle-bg: rgb(131, 118, 94);
+    --tower-one: #8f7665;
+    --tower-two: #7c6d63;
+    --tower-three: #695d55;
+    --flag-pole: #271913;
+    --flag-orange: rgb(138, 54, 23);
+    --flag-white: rgb(223, 219, 219);
+    --flag-green: rgb(32, 63, 24);
+    --ashoka-center1: rgb(12, 5, 36);
+    --ashoka-center2: rgb(138, 123, 190);
+    --ashoka-center3: rgb(171, 159, 197);
+  }
+}
